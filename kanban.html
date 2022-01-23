@@ -10,17 +10,19 @@
   <div id="board">
     <div class="toDo">
       <header>To Do</header>
-      <input class="newTask" id="newTask" type="text" placeholder="Add your new todo">
-      <ul class="toDoList" id="toDoList"></ul>
+      <input class="newTask" id="newTask" type="text" placeholder="Add your new todo" class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"  ondragover="onDragOver(event);" ondrop="onDrop(event);">
+      <div class="toDoList" id="toDoList"></div>
     </div>
     <div class="inProgress">
       <header>In Progress</header>
-      <ul class="inProgressList"></ul>
+      <div class="inProgressList" id="inProgressList" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
 
     </div>
     <div class="done">
       <header>Done</header>
-      <ul class="doneList"></ul>
+      <div class="doneList" id="doneList" ondragover="onDragOver(event);" ondrop="onDrop(event);"></div>
 
     </div>
  </div>

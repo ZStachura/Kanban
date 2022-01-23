@@ -17,18 +17,19 @@ body{
   left: 50%;
   z-index: 1;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 10px 0px 10px 0px;
   position: absolute;
   transform: translate(-50%,-50%);
 }
 
-#toDoList{
+#toDoList , #inProgressList , #doneList {
   list-style-type: none;
   line-height: 10px;
   max-height: 50%;
-  overflow: scroll;
+  overflow: auto;
 }
-#toDoList li{
+  
+.task{
   color: #000000;
   text-align:center;
   font-size: 10px;
@@ -36,6 +37,15 @@ body{
   margin-bottom: 5px;
   background-color: #27a096;
 }
+
+#inProgressList li{
+background-color: rgb(219, 186, 96);
+}
+
+#doneList li{
+  background-color: rgb(84, 170, 106);
+}
+
 .inProgress{
   width: 30%;
   height: 25%;
@@ -43,7 +53,7 @@ body{
   top: 50%;
   z-index: 2;
   background: #b1b1b1;
-  border-radius: 10px;
+  border-radius: 10px 0px 10px 0px;
   position: absolute;
   transform: translate(-50%,-50%);
 }
@@ -55,7 +65,7 @@ body{
   top: 80%;
   z-index: 3;
   background: #808080;
-  border-radius: 10px;
+  border-radius: 10px 0px 10px 0px;
   position: absolute;
   transform: translate(-50%,-50%);
 }
