@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+	<script src="lib/long-press-event.min.js"></script>
 </head>
 <body>
   <div id="board">
     <div class="toDo">
       <header>To Do</header>
-      <input class="newTask" id="newTask" type="text" placeholder="Add your new todo" class="example-draggable"
-      draggable="true"
-      ondragstart="onDragStart(event);"  ondragover="onDragOver(event);" ondrop="onDrop(event);">
+      <input class="newTask" id="newTask" type="text" placeholder="Add your new todo" class="example-draggable">
       <div class="toDoList" id="toDoList"></div>
     </div>
     <div class="inProgress">
