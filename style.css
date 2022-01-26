@@ -13,13 +13,9 @@ body{
 .toDo{
   width: 30%;
   height: 25%;
-  top: 20%;
-  left: 50%;
   z-index: 1;
   background: #ffffff;
   border-radius: 10px 0px 10px 0px;
-  position: absolute;
-  transform: translate(-50%,-50%);
 }
 
 #toDoList , #inProgressList , #doneList {
@@ -39,7 +35,7 @@ body{
 }
 
 #inProgressList li{
-background-color: rgb(219, 186, 96);
+  background-color: rgb(219, 186, 96);
 }
 
 #doneList li{
@@ -49,25 +45,19 @@ background-color: rgb(219, 186, 96);
 .inProgress{
   width: 30%;
   height: 25%;
-  left: 50%;
-  top: 50%;
   z-index: 2;
   background: #b1b1b1;
   border-radius: 10px 0px 10px 0px;
-  position: absolute;
-  transform: translate(-50%,-50%);
+  
 }
 
 .done{
   width: 30%;
   height: 25%;
-  left: 50%;
-  top: 80%;
   z-index: 3;
   background: #808080;
   border-radius: 10px 0px 10px 0px;
-  position: absolute;
-  transform: translate(-50%,-50%);
+  
 }
 
 .toDo,.done,.inProgress header{
@@ -85,13 +75,85 @@ background-color: rgb(219, 186, 96);
   .toDo{
     z-index: 1;
     width: 80%;
+	top: 20%;
+    left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
   }
   .inProgress{
     z-index: 2;
     width: 80%;
+	left: 50%;
+    top: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
   }
   .done{
     z-index: 3;
     width: 80%;
+    left: 50%;
+    top: 80%;
+	position: absolute;
+	transform: translate(-50%,-50%);
   }
-} ;
+}
+
+@media screen and (min-width:600px){
+  .toDo{
+    width: 30vw;
+	height: 50vh;
+    display: inline-block;
+	margin: 1%;
+	margin-left:3%;
+	margin-top: 5%;
+	position: fixed;
+
+  }
+  .inProgress{
+    width: 30vw;
+	height: 50vh;
+    display: inline-block;
+	margin: 1%;
+	position: fixed;
+	top: 8.3%;
+	left: 34%;
+  }
+  .done{
+    width: 30vw;
+	height: 50vh;
+    display: inline-block;
+	margin: 1%;
+	position: fixed;
+	top: 8.3%;
+	left: 66%;
+  }
+  .toDo header{
+	font-size: 25px;
+  }
+  .inProgress header{
+	font-size: 25px;
+  }
+  .done header{
+	font-size: 25px;
+  }
+  .task{
+	color: #000000;
+	text-align:center;
+	font-size: 30px;
+	margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #27a096;
+  }
+  #toDoList , #inProgressList , #doneList {
+    list-style-type: none;
+	margin-top: 1vh;
+    line-height: 35px;
+	height: 40vh;
+	max-height: 40vh;
+    overflow: auto;
+  }
+  #inProgressList , #doneList {
+	margin-top: 4.4vh;
+  }
+}
+
