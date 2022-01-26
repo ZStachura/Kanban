@@ -31,7 +31,7 @@ body{
   font-size: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #27a096;
+  background-color: #71a8a4;
 }
 
 #inProgressList li{
@@ -142,7 +142,7 @@ body{
 	font-size: 30px;
 	margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #27a096;
+    background-color: #71a8a4;
   }
   #toDoList , #inProgressList , #doneList {
     list-style-type: none;
